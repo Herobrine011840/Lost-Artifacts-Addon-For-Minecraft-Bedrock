@@ -1,6 +1,7 @@
 The Official Lost Artifacts Addon by Herobrine011840.
 
-![Microsoft Clipchamp 9_25_2023 3_13_19 PM](https://github.com/Herobrine011840/Lost-Artifacts-Addon-For-Minecraft-Bedrock/assets/139717119/5e1bf284-7a1d-4f33-84f9-422af5f1fffa)
+![Screenshot 9_25_2023 4_00_37 PM](https://github.com/Herobrine011840/Lost-Artifacts-Addon-For-Minecraft-Bedrock/assets/139717119/ec2f5c93-18e4-4ac5-9a77-a13e656a99de)
+
 
 A few tips on downloading:
 1. When loading a world with the addon, make sure to activate holiday creator features.
