@@ -1,0 +1,66 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "artifacts:regeneration_totem",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "artifacts_regeneration_totem"
+			},
+			"minecraft:creative_category": {
+				"parent": "equipment"
+			},
+			"minecraft:durability": {
+				"max_durability": 8
+			},
+			"minecraft:enchantable": {
+				"slot": "elytra",
+				"value": 8
+			},
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "use"
+				}
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:cooldown": {
+				"category": "regeneration_totem",
+				"duration": 60
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"artifacts:regeneration_totem"
+						],
+						"repair_amount": 100
+					},
+					{
+						"items": [
+							"diamond"
+						],
+						"repair_amount": 10
+					}
+				]
+			},
+			"minecraft:hover_text_color": "aqua"
+		},
+		"events": {
+			"use": {
+				"damage": {
+					"amount": 1,
+					"target": "self",
+					"type": "durability"
+				},
+				"run_command": {
+					"command": [
+						"effect @p regeneration 10 2 true",
+						"playsound random.totem @a ~ ~ ~"
+					]
+				}
+			}
+		}
+	}
+}

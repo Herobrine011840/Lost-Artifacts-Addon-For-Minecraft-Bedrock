@@ -1,0 +1,52 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"Herobrine011840"
+		],
+		"generated_with": {
+			"bridge": [
+				"2.6.1"
+			],
+			"dash": [
+				"0.10.10"
+			]
+		}
+	},
+	"header": {
+		"name": "Lost Artifacts Addon",
+		"description": "This addon adds new rare items found in chests throughout the world.",
+		"min_engine_version": [
+			1,
+			20,
+			0
+		],
+		"uuid": "98a6024d-c9d5-42b7-a69d-de95ba500b36",
+		"version": [
+			1,
+			0,
+			2
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "c32fc71d-1bf9-4066-9dc6-b1d66cb8ae9d",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "1039fd9a-c4d3-4497-8570-eb62e8d62ea7",
+			"version": [
+				1,
+				0,
+				2
+			]
+		}
+	]
+}

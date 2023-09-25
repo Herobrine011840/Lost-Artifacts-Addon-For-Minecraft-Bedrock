@@ -1,0 +1,66 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "artifacts:ancient_leaf",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "artifacts_ancient_leaf"
+			},
+			"minecraft:creative_category": {
+				"parent": "equipment"
+			},
+			"minecraft:durability": {
+				"max_durability": 2
+			},
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "use"
+				}
+			},
+			"minecraft:enchantable": {
+				"slot": "elytra",
+				"value": 8
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:cooldown": {
+				"category": "ancient_leaf",
+				"duration": 50
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"artifacts:ancient_leaf"
+						],
+						"repair_amount": 100
+					},
+					{
+						"items": [
+							"torchflower_seeds"
+						],
+						"repair_amount": 100
+					}
+				]
+			},
+			"minecraft:hover_text_color": "aqua"
+		},
+		"events": {
+			"use": {
+				"damage": {
+					"amount": 1,
+					"target": "self",
+					"type": "durability"
+				},
+				"run_command": {
+					"command": [
+						"effect @p absorption 60 2 true",
+						"playsound chime.amethyst_block @a ~ ~ ~"
+					]
+				}
+			}
+		}
+	}
+}

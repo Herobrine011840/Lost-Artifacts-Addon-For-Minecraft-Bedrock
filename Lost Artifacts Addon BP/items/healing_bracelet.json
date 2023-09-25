@@ -1,0 +1,66 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "artifacts:healing_bracelet",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "artifacts_healing_bracelet"
+			},
+			"minecraft:creative_category": {
+				"parent": "equipment"
+			},
+			"minecraft:durability": {
+				"max_durability": 20
+			},
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "use"
+				}
+			},
+			"minecraft:enchantable": {
+				"slot": "elytra",
+				"value": 8
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:cooldown": {
+				"category": "healing_bracelet",
+				"duration": 30
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"glistering_melon_slice"
+						],
+						"repair_amount": 100
+					},
+					{
+						"items": [
+							"artifacts:healing_bracelet"
+						],
+						"repair_amount": 100
+					}
+				]
+			},
+			"minecraft:hover_text_color": "aqua"
+		},
+		"events": {
+			"use": {
+				"damage": {
+					"amount": 1,
+					"target": "self",
+					"type": "durability"
+				},
+				"run_command": {
+					"command": [
+						"effect @p instant_health 1 0 true",
+						"playsound block.enchanting_table.use @a ~ ~ ~"
+					]
+				}
+			}
+		}
+	}
+}

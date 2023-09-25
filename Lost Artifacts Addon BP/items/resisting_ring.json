@@ -1,0 +1,66 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "artifacts:resisting_ring",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "artifacts_resisting_ring"
+			},
+			"minecraft:creative_category": {
+				"parent": "equipment"
+			},
+			"minecraft:durability": {
+				"max_durability": 15
+			},
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "use"
+				}
+			},
+			"minecraft:enchantable": {
+				"slot": "elytra",
+				"value": 8
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:cooldown": {
+				"category": "resisting_ring",
+				"duration": 60
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"iron_ingot"
+						],
+						"repair_amount": 10
+					},
+					{
+						"items": [
+							"artifacts:resisting_ring"
+						],
+						"repair_amount": 100
+					}
+				]
+			},
+			"minecraft:hover_text_color": "aqua"
+		},
+		"events": {
+			"use": {
+				"damage": {
+					"amount": 1,
+					"target": "self",
+					"type": "durability"
+				},
+				"run_command": {
+					"command": [
+						"effect @p resistance 10 1 true",
+						"playsound block.enchanting_table.use @a ~ ~ ~"
+					]
+				}
+			}
+		}
+	}
+}
