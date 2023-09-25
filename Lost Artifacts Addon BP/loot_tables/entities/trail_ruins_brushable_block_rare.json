@@ -1,0 +1,102 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:howl_pottery_sherd",
+          "weight": 20
+        },
+        {
+          "type": "item",
+          "name": "minecraft:sheaf_pottery_sherd",
+          "weight": 20
+        },
+        {
+          "type": "item",
+          "name": "minecraft:heart_pottery_sherd",
+          "weight": 20
+        },
+        {
+          "type": "item",
+          "name": "minecraft:heartbreak_pottery_sherd",
+          "weight": 20
+        },
+        {
+          "type": "item",
+          "name": "minecraft:friend_pottery_sherd",
+          "weight": 20
+        },
+        {
+          "type": "item",
+          "name": "minecraft:danger_pottery_sherd",
+          "weight": 20
+        },
+        {
+          "type": "item",
+          "name": "minecraft:burn_pottery_sherd",
+          "weight": 20
+        },
+        {
+          "type": "item",
+          "name": "minecraft:wayfinder_armor_trim_smithing_template",
+          "weight": 20
+        },
+        {
+          "type": "item",
+          "name": "minecraft:raiser_armor_trim_smithing_template",
+          "weight": 20
+        },
+        {
+          "type": "item",
+          "name": "minecraft:shaper_armor_trim_smithing_template",
+          "weight": 20
+        },
+        {
+          "type": "item",
+          "name": "minecraft:host_armor_trim_smithing_template",
+          "weight": 20
+        },
+        {
+          "type": "item",
+          "name": "minecraft:music_disc_relic",
+          "weight": 20
+        },
+        {
+          "type": "item",
+          "name": "artifacts:wooden_ring",
+          "weight": 15
+        },
+        {
+          "type": "item",
+          "name": "artifacts:swift_charm",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "artifacts:ancient_leaf",
+          "weight": 8
+        },
+        {
+          "type": "item",
+          "name": "artifacts:healing_bracelet",
+          "weight": 8
+        },
+        {
+          "type": "item",
+          "name": "artifacts:regeneration_totem",
+          "weight": 6
+        },
+        {
+          "type": "item",
+          "name": "artifacts:resisting_ring",
+          "weight": 6
+        }
+      ]
+    }
+  ]
+}
