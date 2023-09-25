@@ -1,0 +1,36 @@
+{
+	"resource_pack_name": "Lost Artifacts Addon",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"artifacts_roserite_ingot": {
+			"textures": "textures/items/roserite_ingot"
+		},
+		"artifacts_roserite_ring": {
+			"textures": "textures/items/roserite_ring"
+		},
+		"artifacts_roserite_charm": {
+			"textures": "textures/items/roserite_charm"
+		},
+		"artifacts_wooden_ring": {
+			"textures": "textures/items/wooden_ring"
+		},
+		"artifacts_ancient_leaf": {
+			"textures": "textures/items/ancient_leaf"
+		},
+		"artifacts_gilded_ring": {
+			"textures": "textures/items/gilded_ring"
+		},
+		"artifacts_healing_bracelet": {
+			"textures": "textures/items/healing_bracelet"
+		},
+		"artifacts_resisting_ring": {
+			"textures": "textures/items/resisting_ring"
+		},
+		"artifacts_regeneration_totem": {
+			"textures": "textures/items/regeneration_totem"
+		},
+		"artifacts_swift_charm": {
+			"textures": "textures/items/swift_charm"
+		}
+	}
+}
